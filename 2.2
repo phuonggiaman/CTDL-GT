@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+long GiaiThuat(int n)
+{
+if(n == 0)
+return 1;
+return GiaiThuat(n - 1) * n;
+}
+int main()
+{
+int n, T;
+printf("\Nhap n = "); scanf("%d", &n);
+T = GiaiThuat(n);
+printf("T = %d", T);
+getch();
+return 0;
+}
